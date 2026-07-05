@@ -92,6 +92,22 @@
   .teaching-item h3{font-size:19px;font-weight:600}
   .teaching-item .meta{font-family:'Inter',sans-serif;font-size:13px;color:var(--muted);margin-top:2px}
   .teaching-item p{margin-top:6px;font-size:16.5px}
+  .teaching-item .lecturers{color:var(--muted);font-size:15.5px;margin-top:4px}
+  .teaching-item .highlights{
+    margin-top:12px;font-family:'Inter',sans-serif;font-size:13.5px;
+    display:flex;flex-wrap:wrap;gap:10px;
+  }
+  .teaching-item .tag{
+    display:inline-flex;align-items:baseline;gap:6px;
+    padding:5px 12px;border:1px solid var(--rule);border-radius:2px;
+  }
+  .teaching-item .tag .k{color:var(--accent);font-weight:600;letter-spacing:.02em}
+  .teaching-item .tag .v{color:var(--ink)}
+  .teaching-item .award{
+    margin-top:12px;padding:12px 16px;border-left:3px solid var(--accent);
+    background:rgba(122,46,63,.045);font-size:16px;
+  }
+  .teaching-item .award strong{color:var(--accent);font-weight:600}
 
   footer{
     margin-top:64px;padding:28px 0 48px;border-top:1px solid var(--rule);
@@ -178,26 +194,36 @@
   </section>
 
   <section id="teaching" class="content">
-    <div class="label">Teaching</div>
-
     <div class="teaching-item">
-      <h3>Managerial Economics (MBA class)</h3>
+      <h3>Managerial Economics <span style="font-weight:400;color:var(--muted)">(MBA)</span></h3>
       <div class="meta">Teaching Assistant · Stanford GSB · Spring 2024, Spring 2026</div>
-      <p> Lecturer: Yuliy Sannikov.</p>
-    </div>
-    
-    <div class="teaching-item">
-      <h3>MGTECON 300: Growth and Stabilization in the Global Economy (MBA class) <!-- EDIT --></h3>
-      <div class="meta">Teaching Assistant · Stanford GSB · Spring 2025</div>
-      <p> Lecturers: Charles Jones, Sebastian Di Tella</p>
+      <p class="lecturers">Lecturer: Yuliy Sannikov</p>
     </div>
 
     <div class="teaching-item">
-      <h3>Economics of Labor: Strategy, Policy, and the Future of Work (MBA class) <!-- EDIT --></h3>
+      <h3>Growth and Stabilization in the Global Economy <span style="font-weight:400;color:var(--muted)">(MBA · MGTECON 300)</span></h3>
       <div class="meta">Teaching Assistant · Stanford GSB · Spring 2025</div>
-      <p> Lecturer: Paul Oyer.</p>
+      <p class="lecturers">Lecturers: Charles Jones, Sebastian Di Tella</p>
     </div>
-    
+
+    <div class="teaching-item">
+      <h3>Economics of Labor: Strategy, Policy, and the Future of Work <span style="font-weight:400;color:var(--muted)">(MBA)</span></h3>
+      <div class="meta">Teaching Assistant · Stanford GSB · Spring 2025</div>
+      <p class="lecturers">Lecturer: Paul Oyer</p>
+    </div>
+
+    <div class="teaching-item">
+      <h3>Macroeconomics I & II <span style="font-weight:400;color:var(--muted)">(Undergraduate)</span></h3>
+      <div class="meta">Teaching Assistant · Higher School of Economics, Moscow · Fall 2018–Spring 2019, Fall–Winter 2020</div>
+      <p class="lecturers">Lecturers: Sergey Pekarski, Sergey Merzlyakov, Dmitry Veselov, Oxana Malakhovskaya</p>
+      <div class="highlights">
+        <span class="tag"><span class="k">Student evaluation</span><span class="v">4.91 / 5.00</span></span>
+      </div>
+      <div class="award">
+        <strong>Best Teachers of HSE, 2019</strong> — the youngest instructor to receive this award, in my first year of teaching.
+      </div>
+    </div>
+        
   </section>
 
   <section id="beyond" class="content">
