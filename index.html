@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daria Matviienko — Stanford GSB</title>
-<meta name="description" content="Daria Matviienko is a PhD candidate at Stanford Graduate School of Business, on the academic job market.">
+<meta name="description" content="Daria Matviienko is a PhD candidate in macroeconomics at Stanford Graduate School of Business, on the 2026–27 job market.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -53,11 +53,9 @@
   .bio p{margin-bottom:14px}
   .bio a, .content a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(122,46,63,.3)}
   .bio a:hover, .content a:hover{border-bottom-color:var(--accent)}
+  .advisors{font-size:16.5px;color:var(--muted)}
   .portrait{width:240px}
   .portrait img{width:100%;display:block;border-radius:2px}
-  .portrait figcaption{
-    margin-top:10px;font-family:'Inter',sans-serif;font-size:12px;color:var(--muted)
-  }
   .contact-line{
     margin-top:20px;font-family:'Inter',sans-serif;font-size:13.5px;color:var(--muted)
   }
@@ -83,6 +81,7 @@
     cursor:pointer;font-family:'Inter',sans-serif;font-size:13px;
     color:var(--muted);list-style:none;
   }
+  .paper summary::-webkit-details-marker{display:none}
   .paper summary::before{content:"+ ";color:var(--accent)}
   .paper details[open] summary::before{content:"− "}
   .paper details p{margin-top:8px;font-size:16.5px;color:#3d3935}
@@ -141,21 +140,22 @@
       <h1>Daria Matviienko</h1>
       <p class="role">PhD Candidate, Stanford Graduate School of Business</p>
       <div class="bio">
-        <p><!-- EDIT: one or two sentences on your field and research agenda -->
-        I am a PhD candidate at the Stanford Graduate School of Business. My research studies
-        macroeconomics, with a focus on
-        growth, industry dynamics, and inequality.</p>
-        <p><strong>I am on the 2026–27 academic job market.</strong></p>
+        <p>I am a PhD candidate at the Stanford Graduate School of Business. My research is in
+        macroeconomics, with a focus on growth, industry dynamics, and inequality.</p>
+        <p><strong>I am on the 2026–27 academic and policy job market.</strong></p>
+        <p class="advisors">Advisors:
+          <a href="https://www.gsb.stanford.edu/faculty-research/faculty/christopher-tonetti">Christopher Tonetti</a>,
+          <a href="https://www.gsb.stanford.edu/faculty-research/faculty/chad-jones">Charles I. Jones</a>,
+          <a href="https://www.gsb.stanford.edu/faculty-research/faculty/sebastian-di-tella">Sebastian Di Tella</a></p>
       </div>
       <p class="contact-line">
         <a href="mailto:matvienk@stanford.edu">matvienk@stanford.edu</a> &nbsp;·&nbsp;
-        <a href="cv.pdf">Curriculum Vitae</a> &nbsp;·&nbsp;
-        <!--<a href="https://scholar.google.com">Google Scholar</a>-->
+        <a href="cv.pdf">Curriculum Vitae</a>
+        <!-- &nbsp;·&nbsp; <a href="https://scholar.google.com/...">Google Scholar</a> -->
       </p>
     </div>
     <figure class="portrait">
       <img src="photo.jpg" alt="Portrait of Daria Matviienko">
-      <figcaption> </figcaption>
     </figure>
   </div>
 
@@ -163,42 +163,84 @@
     <div class="label">Research</div>
 
     <div class="paper">
-      <h3>Regulatory Capture and Superstars: Lobbying, Innovation, and Industry Dynamics <!-- EDIT --></h3>
-      <div class="meta"><em>Job market paper</em> · with Pedro Oliboni </div>
+      <h3>Regulatory Capture and Superstars: Lobbying, Innovation, and Industry Dynamics</h3>
+      <!-- Add Pedro's website: with <a href="URL">Pedro Oliboni</a> -->
+      <div class="meta"><em>Job market paper</em> · with Pedro Oliboni · draft coming soon</div>
       <details>
         <summary>Abstract</summary>
-        <p><!-- EDIT: paste your abstract here --> Most corporate lobbying in the US serves two distinct goals: affecting a firm's own tax or regulatory burden mostly through variable costs (own-benefit lobbying) and changing industry-wide regulation through fixed costs (barrier lobbying). The two activities have opposite competitive and welfare implications, and firms in practice do both. We study their welfare consequences, combining an empirical analysis of the corporate lobbying portfolio with a structural model disciplined by it. Using an LLM-based classification of all LDA lobbying reports and Congressional bills, merged with Compustat, we decompose the lobbying portfolio along three dimensions: direction (pro- vs. anti-regulation), cost type (fixed vs. variable), and scope (narrow, firm-specific vs. broad, industry-wide). We find that within industries, larger firms lobby to raise industry-wide regulatory fixed costs, while smaller firms lobby to lower them. Additionally, large firms lobby mostly individually rather than through associations, consistent with lobbying being a strategic decision.
-To rationalize these patterns, we introduce endogenous lobbying into a dynamic general-equilibrium model of oligopolistic competition and innovation. Each industry consists of a small number of strategic superstar firms and a continuum of atomistic fringe firms, competing over output, R&D, and the two lobbying instruments. Superstars choose both strategically, internalizing how barrier lobbying affects fringe entry and exit; fringe firms lobby on fixed costs only through a trade association subject to an Olson-style coordination cost. Equilibrium regulation is determined by a Becker–Mulligan influence contest, and the model reproduces the empirical relationship between size and lobbying direction. Calibrated to US data, lobbying imposes a welfare loss of approximately 3.6% of lifetime consumption, operating almost entirely through reduced long-run growth as barrier lobbying shifts industries toward more concentrated states with less entry and innovation. Removing the barrier lobbying alone recovers the entire loss.</p>
+        <p>Corporate lobbying serves two distinct goals: lowering a firm's own tax or regulatory burden
+        (own-benefit lobbying) and shaping industry-wide regulation that sets fixed costs (barrier lobbying).
+        The two have opposite competitive and welfare implications, and firms in practice do both. Using an
+        LLM-based classification of all LDA lobbying reports and Congressional bills, merged with Compustat,
+        we decompose firms' lobbying portfolios by direction, cost type, and scope. Within industries, larger
+        firms lobby to raise industry-wide regulatory fixed costs, while smaller firms lobby to lower them;
+        large firms also lobby mostly on their own rather than through trade associations. To rationalize
+        these patterns, we embed endogenous lobbying in a dynamic general-equilibrium model of oligopolistic
+        competition and innovation, in which strategic superstar firms and an atomistic fringe compete over
+        output, R&amp;D, and both lobbying instruments, and regulation is determined by a Becker–Mulligan
+        influence contest. Calibrated to US data, lobbying imposes a welfare loss of about 3.6% of lifetime
+        consumption, almost entirely through lower long-run growth, as barrier lobbying shifts industries
+        toward more concentrated states with less entry and innovation. Eliminating barrier lobbying alone
+        recovers the entire loss.</p>
       </details>
-      <!-- 
+      <!-- When the draft is ready: put the file in a "papers" folder, delete "· draft coming soon" above,
+           and uncomment this block.
       <div class="links">
-        <a href="papers/paper1.pdf">PDF</a>
-        <a href="https://ssrn.com">SSRN</a>
+        <a href="papers/Matviienko_JMP.pdf">PDF</a>
       </div>
       -->
     </div>
 
     <div class="paper">
-      <h3>Household Heterogeneity and Mortgage Default <!-- EDIT --></h3>
+      <h3>Household Heterogeneity and Mortgage Default</h3>
+      <!-- Add Augustus's website: with <a href="URL">Augustus Kmetz</a> -->
       <div class="meta">with Augustus Kmetz · working paper</div>
       <details>
         <summary>Abstract</summary>
-        <p>We study the role of preference heterogeneity in mortgage defaults, focusing on how differences in time preferences, intertemporal elasticity of substitution, and belief distortions shape household financial behavior. Using microdata from the PSID and a structural lifecycle model with endogenous housing, saving, and default decisions, we quantify the contribution of ex ante differences between households: discount factor heterogeneity, present bias, and income expectation errors, and ex post: income realizations to foreclosure risk. The model, estimated using the Simulated Method of Moments, matches empirical moments on asset accumulation and homeownership without directly targeting foreclosure rates. We find that lower patience and persistent hand-to-mouth behavior substantially increase default risk, even among above-water borrowers. Counterfactual exercises decompose the drivers of default, and policy simulations evaluate the welfare effects of behaviorally informed mortgage interventions. We show that commitment-based liquidity buffers can reduce defaults while maintaining neutrality for prudent agents. Our findings underscore the importance of incorporating behavioral heterogeneity into models of household finance and mortgage design.</p>
+        <p>We study how preference heterogeneity shapes mortgage default. Using PSID microdata and a structural
+        life-cycle model with endogenous housing, saving, and default decisions, we quantify how much
+        foreclosure risk comes from ex ante differences across households (discount-factor heterogeneity,
+        present bias, and income expectation errors) versus ex post income realizations. The model, estimated
+        by the simulated method of moments, matches asset accumulation and homeownership without targeting
+        foreclosure rates. Lower patience and persistent hand-to-mouth behavior substantially raise default
+        risk, even among borrowers with positive home equity. Counterfactual exercises decompose the drivers
+        of default, and policy simulations evaluate the welfare effects of behaviorally informed mortgage
+        interventions: commitment-based liquidity buffers reduce defaults while leaving prudent households
+        unaffected.</p>
       </details>
-      <!--
-      <div class="links"><a href="papers/paper2.pdf">PDF</a></div>
-      -->
     </div>
 
     <div class="paper">
-      <h3>Green Innovation, Environmental Policy, and Sustainable Investing <!-- EDIT --></h3>
+      <h3>Green Innovation, Environmental Policy, and Sustainable Investing</h3>
       <div class="meta">solo-authored · draft available on request</div>
       <details>
         <summary>Abstract</summary>
-        <p>This paper addresses the disconnect between the macroeconomic literature on green transition and finance literature focusing on sustainable investing by funds and individual investors, and green-asset purchases by central banks. It explores the impact of changing the cost of capital for firms engaged in both dirty and clean production, aiming to bridge gaps between these two strands of literature.
-The study delves into the uncertainties of ESG investing outcomes, particularly the drawbacks of increasing the cost of capital for dirty firms. Two main challenges emerge: there is an empirical finding that higher capital costs for brown firms lead to increased pollution and evidence that dirty companies can contribute to high-quality green innovations. 
-It aims to test the hypothesis that elevating the cost of capital for multiproduct firms engaged in both dirty and clean production may hinder green innovation and slow the green transition. 
-It develops a parsimonious perfect-foresight general equilibrium model with directed technical change to evaluate the effects of change in the cost of capital on emissions and innovation. In the context of multiproduct firms involved in both dirty and clean production and innovation, I show that while a rise in dirty input taxes and a rise in a clean research subsidy reduces emissions, an increase in the cost of capital yields an ambiguous outcome: it amplifies existing technology advancement. The direction of change from this policy depends on the initial relation of productivities of clean and dirty innovation. Thus, if the productivity of the dirty innovation is higher than that of the clean one, an increase in the cost of capital makes firms focus more on dirty innovation, potentially disrupting the green transition. Thus, green-asset purchases by the central banks and ESG investing strategies should be based not just on the ESG score or emissions intensity of the company, but also on the degree of substitution of clean and dirty production and innovation advancement of sectors and the structure of the innovation process.</p>
+        <p>Macroeconomic research on the green transition and finance research on sustainable investing—by
+        funds, individual investors, and central banks through green-asset purchases—have developed largely
+        in isolation. This paper connects them by asking how a higher cost of capital affects firms that
+        produce and innovate with both clean and dirty technologies. Evidence shows that higher capital costs
+        for brown firms can increase pollution, and that dirty firms produce many high-quality green
+        innovations. I develop a parsimonious perfect-foresight general-equilibrium model with directed
+        technical change and multiproduct firms. Dirty-input taxes and clean research subsidies reduce
+        emissions, but a higher cost of capital amplifies the existing direction of technical change: when
+        dirty innovation is relatively more productive, firms shift further toward it, which can slow the
+        green transition. ESG strategies and central-bank green-asset purchases should therefore account not
+        only for emissions intensity, but also for the substitutability of clean and dirty production and the
+        structure of firms' innovation.</p>
+      </details>
+    </div>
+
+    <div class="paper">
+      <h3>The Optimal Level of Government Debt and Wealth Inequality</h3>
+      <div class="meta">solo-authored · Best Master's Thesis Prize, Economist Club Luxembourg (2020)</div>
+      <details>
+        <summary>Abstract</summary>
+        <p>This paper studies the optimal level of US government debt in a continuous-time heterogeneous-agent
+        model with incomplete markets, portfolio choice, and aggregate disaster risk, extending Aiyagari and
+        McGrattan (1998). The income process uses autoregressive dynamics with normal-mixture innovations to
+        match the observed income distribution. Disaster risk calls for a fiscal buffer, so the maximum
+        welfare-improving debt-to-GDP ratio is lower than in models without it. The optimal US debt-to-GDP
+        ratio is between 120% and 140%.</p>
       </details>
     </div>
   </section>
@@ -225,25 +267,24 @@ It develops a parsimonious perfect-foresight general equilibrium model with dire
     </div>
 
     <div class="teaching-item">
-      <h3>Macroeconomics I & II <span style="font-weight:400;color:var(--muted)">(Undergraduate)</span></h3>
-      <div class="meta">Teaching Assistant · Higher School of Economics, Moscow · Fall 2018–Spring 2019, Fall–Winter 2020</div>
+      <h3>Macroeconomics I &amp; II <span style="font-weight:400;color:var(--muted)">(Undergraduate)</span></h3>
+      <div class="meta">Teaching Fellow · Higher School of Economics, Moscow · Fall 2018–Spring 2019, Fall–Winter 2020</div>
       <p class="lecturers">Lecturers: Sergey Pekarski, Sergey Merzlyakov, Dmitry Veselov, Oxana Malakhovskaya</p>
       <div class="highlights">
         <span class="tag"><span class="k">Student evaluation</span><span class="v">4.91 / 5.00</span></span>
       </div>
       <div class="award">
         <strong><a href="https://www.hse.ru/en/best/2019economics" target="_blank" rel="noopener">Best Teachers of Higher School of Economics, 2019</a></strong> — the youngest instructor to receive this award, in my first year of teaching.
-        
       </div>
     </div>
-
   </section>
-
 
   <section id="beyond" class="content">
     <div class="label">Beyond Research</div>
-    <p>Outside of research, I am a competitive ballroom dancer and served as President of the
-    Stanford Ballroom Team from 2022 to 2025. I was a lead organizer and co-organizer of the Stanford Cardinal Classic Ballroom Dancing Competition in 2025 and 2026, welcoming more than 400 competitors and guests. <a href="ballroom.html">See more →</a></p>
+    <p>Outside of research, I am a competitive ballroom dancer and won the Novice Standard title at the
+    2026 U.S. National Amateur DanceSport Championships. I served as President of the Stanford Ballroom
+    Team from 2022 to 2025 and was lead organizer of the Stanford Cardinal Classic Ballroom Competition in
+    2025 and 2026, which welcomed more than 400 competitors and guests. <a href="ballroom.html">See more →</a></p>
   </section>
 
   <footer>
