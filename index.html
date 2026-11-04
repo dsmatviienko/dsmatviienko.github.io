@@ -61,6 +61,16 @@
   }
   .contact-line a{color:var(--accent);text-decoration:none;border-bottom:none}
 
+  .market{display:inline-block;margin-top:12px;padding:3px 10px;border:1px solid var(--accent);border-radius:2px;
+    font-family:'Inter',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.04em;color:var(--accent)}
+  .lede{font-size:19.5px}
+  .themes{list-style:none;margin:6px 0 18px}
+  .themes li{padding:2px 0 2px 16px;border-left:2px solid var(--rule);margin-bottom:16px;font-size:17px}
+  .themes .k{display:block;margin-bottom:2px;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+  .themes .k a{border-bottom:none}
+
+
   /* Sections */
   section{padding:44px 0 8px}
   .label{
@@ -139,12 +149,15 @@
     <div>
       <h1>Daria Matviienko</h1>
       <p class="role">PhD Candidate, Stanford Graduate School of Business</p>
+      <p class="market">On the 2026–27 job market</p>
       <div class="bio">
-        <p>I am a PhD candidate at the Stanford Graduate School of Business. 
-          My research is in macroeconomics, with a focus on growth, industry dynamics, political economy, and household finance. 
-          My job market paper uses large language models to measure what firms lobby for and a dynamic model of oligopoly and innovation to quantify the effects on concentration, growth, and welfare. 
-          In household finance, I study how differences in preferences explain why some homeowners default on their mortgages and others in similar financial positions do not, and what this means for foreclosure-prevention policy.</p>
-        <p><strong>I am on the 2026–27 job market.</strong></p>
+        <p class="lede">My research is in macroeconomics, with a focus on growth, industry dynamics, political economy, and household finance.</p>
+        <ul class="themes">
+          <li><span class="k">Lobbying and concentration · <a href="#jmp">job market paper</a></span>
+            I use large language models to measure what firms lobby for, and a dynamic model of oligopoly and innovation to quantify the effects on concentration, growth, and welfare.</li>
+          <li><span class="k">Household finance</span>
+            I study how differences in preferences explain why some homeowners default on their mortgages while others in similar financial positions do not, and what this means for foreclosure-prevention policy.</li>
+        </ul>
         <p class="advisors">Advisors:
           <a href="https://www.gsb.stanford.edu/faculty-research/faculty/christopher-tonetti">Christopher Tonetti</a>,
           <a href="https://www.gsb.stanford.edu/faculty-research/faculty/chad-jones">Charles I. Jones</a>,
