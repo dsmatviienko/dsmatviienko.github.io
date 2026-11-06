@@ -48,7 +48,7 @@
   /* Intro */
   .intro{display:grid;grid-template-columns:1fr 240px;gap:48px;align-items:start;padding:56px 0 16px}
   h1{font-size:44px;font-weight:500;line-height:1.15;letter-spacing:-.01em}
-  .role{margin-top:14px;font-size:19px;color:var(--muted);font-style:italic}
+  .role{margin-top:14px;font-size:19px;color:var(--muted)}
   .bio{margin-top:24px}
   .bio p{margin-bottom:14px}
   .bio a, .content a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(122,46,63,.3)}
@@ -61,15 +61,11 @@
   }
   .contact-line a{color:var(--accent);text-decoration:none;border-bottom:none}
 
-  .market{display:inline-block;margin-top:12px;padding:3px 10px;border:1px solid var(--accent);border-radius:2px;
-    font-family:'Inter',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.04em;color:var(--accent)}
+  .market{margin-top:6px;font-size:19px;font-weight:600;color:var(--ink)}
   .lede{font-size:19.5px}
   .themes{list-style:none;margin:6px 0 18px}
   .themes li{padding:2px 0 2px 16px;border-left:2px solid var(--rule);margin-bottom:16px;font-size:17px}
-  .themes .k{display:block;margin-bottom:2px;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;
-    letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-  .themes .k a{border-bottom:none}
-
+  .themes .k{display:block;margin-bottom:2px;font-size:19px;font-weight:600;line-height:1.4;color:var(--ink)}
 
   /* Sections */
   section{padding:44px 0 8px}
@@ -149,13 +145,13 @@
     <div>
       <h1>Daria Matviienko</h1>
       <p class="role">PhD Candidate, Stanford Graduate School of Business</p>
-      <p class="market">On the 2026–27 job market</p>
+      <p class="market">I'm on the 2026–27 job market</p>
       <div class="bio">
         <p class="lede">My research is in macroeconomics, with a focus on growth, industry dynamics, political economy, and household finance.</p>
         <ul class="themes">
-          <li><span class="k">Lobbying and concentration · <a href="#jmp">job market paper</a></span>
-            I use large language models to measure what firms lobby for, and building a dynamic model of oligopoly and innovation to quantify the effects of lobbying on concentration, growth, and welfare.</li>
-          <li><span class="k">Household finance</span>
+          <li><span class="k">Lobbying, Innovation, and Concentration</span>
+            I use large language models to measure what firms lobby for, and build a dynamic model of oligopoly and innovation to quantify the effects of lobbying on concentration, growth, and welfare.</li>
+          <li><span class="k">Household Finance</span>
             I study how differences in preferences explain why some homeowners default on their mortgages while others in similar financial positions do not, and what this means for foreclosure-prevention policy.</li>
         </ul>
         <p class="advisors">Advisors:
@@ -177,7 +173,7 @@
   <section id="research" class="content">
     <div class="label">Research</div>
 
-    <div class="paper">
+    <div class="paper" id="jmp">
       <h3>Regulatory Capture by Superstars: Lobbying, Innovation, and Industry Concentration</h3>
       <!-- Add Pedro's website: with <a href="URL">Pedro Oliboni</a> -->
       <div class="meta"><em>Job market paper</em> · with Pedro Oliboni · draft coming soon</div>
